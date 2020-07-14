@@ -12,9 +12,11 @@ let urlsToCache = [
   "/js/nav.js",
   "/js/data.js",
   "/js/script.js",
+  "/js/btnClickListener.js",
   "/pages/match.html",
   "/pages/standings.html",
   "/pages/teams.html",
+  "/pages/saved.html",
 ];
 
 self.addEventListener("install", (event) => {
