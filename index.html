@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your daily premier league info" />
+    <meta name="theme-color" content="#00897B" />
+    <title>Premier League Live</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="teal lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">Premier League</a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Content goes here -->
+    <div class="container" id="body-content"></div>
+    <!-- Content end -->
+
+    <!-- Additional script for materialize css -->
+    <script src="js/materialize.min.js"></script>
+
+    <!-- Fetch Data -->
+    <script src="js/data.js"></script>
+
+    <!-- Dynamic/responsive navbar script -->
+    <script src="js/nav.js"></script>
+
+    <!-- Register ServiceWorker -->
+    <script src="js/script.js"></script>
+
+    <!-- IndexDB & Database -->
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+
+    <!-- Request data pertama kali -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        getStandings();
+        getMatch();
+        getTeams();
+        getSaved();
+      });
+    </script>
+  </body>
+</html>
