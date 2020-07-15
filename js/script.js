@@ -1,3 +1,17 @@
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", function () {
+//     navigator.serviceWorker
+//       .register("./serviceWorker.js")
+//       .then(function () {
+//         console.log("ServiceWorker registered");
+//       })
+//       .catch(function () {
+//         console.log("Failed to register ServiceWorker");
+//       });
+//   });
+// } else {
+//   console.log("This browser doesn't support ServiceWorker");
+// }
 const urlBase64ToUint8Array = (base64String) => {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
   const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");

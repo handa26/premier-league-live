@@ -1,4 +1,4 @@
-const CACHE_NAME = "football-info-pwa-v6";
+const CACHE_NAME = "football-info-pwa-v8";
 let urlsToCache = [
   "/",
   "/favicon.ico",
@@ -12,11 +12,29 @@ let urlsToCache = [
   "/js/nav.js",
   "/js/data.js",
   "/js/script.js",
+  "/js/db.js",
+  "/js/idb.js",
   "/js/btnClickListener.js",
   "/pages/match.html",
   "/pages/standings.html",
   "/pages/teams.html",
   "/pages/saved.html",
+  "/images/icons/icon-72x50.png",
+  "/images/icons/icon-72x72.png",
+  "/images/icons/icon-96x67.png",
+  "/images/icons/icon-96x96.png",
+  "/images/icons/icon-128x90.png",
+  "/images/icons/icon-128x128.png",
+  "/images/icons/icon-144x101.png",
+  "/images/icons/icon-144x144.png",
+  "/images/icons/icon-152x107.png",
+  "/images/icons/icon-152x152.png",
+  "/images/icons/icon-192x135.png",
+  "/images/icons/icon-192x192.png",
+  "/images/icons/icon-384x271.png",
+  "/images/icons/icon-384x384.png",
+  "/images/icons/icon-512x362.png",
+  "/images/icons/icon-512x512.png",
 ];
 
 self.addEventListener("install", (event) => {
