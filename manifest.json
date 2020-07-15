@@ -1,5 +1,6 @@
 {
   "name": "Premier League Football",
+  "gcm_sender_id": "220821869531",
   "short_name": "Premier League",
   "theme_color": "#37003c",
   "background_color": "#37003c",
